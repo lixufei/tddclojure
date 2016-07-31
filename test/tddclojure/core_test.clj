@@ -21,10 +21,9 @@
                                             {:name "project1" :amount 200}]}
                   {:region "US" :revenue [
                                           {:name "project2" :amount 200}]}]]
-      (is (= [{:region "China" :name "project1" :amount 200} {:region "US" :name "project1" :amount 200}]
-             (get-revenue-table salary))
-
-        )
+      (is (= [{:name "project1" :amount 200 :region "China"}
+              {:name "project2" :amount 200 :region "US"}]
+             (get-revenue-table salary)))
       )
 
     )
