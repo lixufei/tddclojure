@@ -1,6 +1,6 @@
 (ns tddclojure.core)
 
-(defoperation :fetch []
+(def operation :fetch []
               (print "fetch")
               )
 
